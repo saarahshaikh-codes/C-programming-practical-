@@ -1,0 +1,24 @@
+
+//WAP to print array in reverse order using a pointer
+
+#include <stdio.h>
+int main()
+{
+int n, i;
+printf("Enter size: ");
+scanf("%d", &n);
+int arr[n];
+for(i = 0; i < n; i++) scanf("%d", &arr[i]);
+int *ptr = &arr[n - 1];
+printf("Reversed Array: ");
+for(i = n - 1; i >= 0; i--)
+{
+printf("%d ", *ptr);
+ptr--;
+}
+printf("\n");
+return 0;
+}
+
+
+
